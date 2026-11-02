@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baoding Shenkong Information Technology Co., Ltd.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8fafc;
+        }
+        header {
+            background: #1e293b;
+            color: white;
+            padding: 1rem 5%;
+            position: sticky;
+            top:0;
+            z-index:10;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin:0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+            margin-left: 24px;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #38bdf8;
+        }
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            padding: 100px 5%;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+        }
+        .hero p {
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 5%;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            color: #1e293b;
+        }
+        .about-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 20px;
+        }
+        .service-card {
+            background: #ffffff;
+            padding: 32px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .service-card h3 {
+            color: #2563eb;
+            margin-bottom:12px;
+        }
+        footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 30px 5%;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Shenkong IT</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Baoding Shenkong Information Technology Co., Ltd.</h1>
+        <p>Professional software development and information technology service provider, committed to building stable, secure and high-performance digital products and mobile applications.</p>
+    </section>
+
+    <div class="container">
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Us</h2>
+            <p>Baoding Shenkong Information Technology Co., Ltd. is an enterprise focused on software research, development and technical services. Our core business covers mobile application development, software customization development, product iteration maintenance and related technical support services.
+            <br><br>
+            We follow standard software development workflows, comply with global application distribution specifications, and deliver reliable software products for different digital platforms. Our team keeps focusing on technical optimization, product security and user experience improvement to provide long-term software operation and maintenance support.</p>
+        </section>
+    </div>
+
+    <div class="container" style="padding-top:20px;">
+        <section id="services">
+            <h2 class="section-title">Our Core Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile application design, development, testing and release, including Android application development compliant with platform policies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Software Development</h3>
+                    <p>Custom software development according to business requirements, function customization, system integration and business digital transformation solutions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Software Operation & Maintenance</h3>
+                    <p>Long-term software version iteration, bug fixing, performance optimization, security inspection and continuous technical service support.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Technical Consulting Service</h3>
+                    <p>Software architecture consulting, development specification guidance, product compliance review and technical scheme evaluation services.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© <span id="year">2026</span> Baoding Shenkong Information Technology Co., Ltd. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
